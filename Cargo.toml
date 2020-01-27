@@ -2,11 +2,21 @@
 name = "hello-world"
 version = "0.1.0"
 authors = ["David Kuo <david.j.kuo@gmail.com>"]
-edition = "2018"
+edition = "2020"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-actix-web = "2.0"
-actix-rt = "1.0"
 listenfd = "0.3"
+
+actix-web = "2.0.0"
+actix-rt = "1.0.0"
+actix-service = "1.0.0"
+
+bytes = "0.5.2"
+futures = "0.3.1"
+env_logger = "*"
+
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+json = "*"
